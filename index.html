@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Js Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    
+    <div id="app">
+
+        //screen 1:subject section ->
+        <div id="home-screen">
+            <h1>Js Quiz</h1>
+            <p>Choose a topic to begin the Quiz</p>
+            <div id="subject-grid"></div>
+        </div>
+
+        <!--Screen 2:Quiz-->
+        <div id="quiz-screen" class="hidden">
+            <div id="progress-bar"><div id="progress-fill"></div></div>
+            <div id="meta-row">
+                <span id="question-counter"></span>
+                <span id="timer"></span>
+            </div>
+            <h2 id="question-text"></h2>
+            <div id="options-grid"></div>
+            <div id="explanation" class="hidden"></div>
+            <button id="next-btn" class="hidden">Next</button>
+        </div>
+
+        <!--Screen 3: Results-->
+        <div id="results-screen" class="hidden">
+            <h2> Your Results</h2>
+            <div id="scorecard"></div>
+            <button id="restart-btn">Try Again</button>
+        </div>
+
+    </div>
+    <script src="data/variables.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
