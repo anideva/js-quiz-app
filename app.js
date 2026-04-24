@@ -2,7 +2,7 @@
 let currentTopic=null;
 let currentQuestionIndex=0;
 let score= 0;
-let timeInterval=null;
+let timerInterval=null;
 let timeLeft= 15;
 
 //elements - grabiing all HTML elements once 
@@ -24,3 +24,10 @@ function init() {
 }
 
 init()
+function startQuiz(topic) {
+    currentTopic= topic;
+    currentQuestionIndex=0;
+    score=0;
+    homeScreen.classList.add('hidden');
+    quizScreen.classList.remove('hidden');
+}
